@@ -1,18 +1,13 @@
 "use strict";
-var Parser = require('simple-text-parser');
-var parser = new Parser();
-
-var result = "success";
 function parse(data){
-  parser.addRule(/\d failing/ig, function(tag){
-    if(tag !== '0 failing'){
-      result = "failure";
-    }
-    return tag;
-  });
+    var result = "failure";
+    var regex = /\d failing/;
+    var match = data.search(regex);
 
-  parser.render(data);
-  return result;
+    if (match == -1)
+        result = "success";
+
+    return result;
 }
 
 module.exports = parse;
