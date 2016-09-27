@@ -1,5 +1,4 @@
 "use strict";
-//Comment
 /**
 *This is a sample app to test build server
 * @author vkkashya@ncsu.edu
@@ -9,7 +8,7 @@ function fibonacci(n){
   ans[0] = 0;
   ans[1] = 1;
   for(var i = 2; i<=n; i++){
-    ans[i] = ans[i-1] + ans[i-2];
+    ans[i] = ans[i-1] - ans[i-2];
   }
   return ans[n];
 }
