@@ -1,4 +1,5 @@
 "use strict";
+// Comment
 /**
 *This is a sample app to test build server
 * @author vkkashya@ncsu.edu
