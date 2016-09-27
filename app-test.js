@@ -7,7 +7,7 @@ suite('app TestSuite', function(){
   })
 
   test('fibonacci: fail the test case', function(done){
-    expect(fibonacci(6)).to.equal(0);
+    expect(fibonacci(5)).to.equal(6);
     done();
   })
 });

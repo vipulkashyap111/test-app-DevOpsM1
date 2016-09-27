@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 					reporterOptions: {'output' : 'mocha-tests-output.xml'},
 					timeout: 20000
 				},
-				src : [ './app-test.js' ]
+				src : [ './*-test.js' ]
 			}
 		}
 	});
