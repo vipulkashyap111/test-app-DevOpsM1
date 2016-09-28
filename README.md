@@ -8,8 +8,10 @@ Gruntfile.js specifies the unit test file and package.json contains all the requ
 ```
 #Install all the dependencies
 npm install
+
 #Run app.js
 node app.js
+
 #Run unit test
 grunt test
 ```
